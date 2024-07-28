@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    
+  <section class="product-page" >
+    <div class="product-details">
+
+        <div class="product-img">
+         <div class="swiper mySwiper">
+         <div class="swiper-wrapper">
+            <!--swiper1---------------------------->
+            <div class="swiper-slide"> 
+                <img src="images/B1.PNG" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="images/B2.PNG" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="images/B3.PNG" alt="">
+            </div>
+
+            <div class="swiper-slide"> 
+                <img src="images/B4.PNG" alt="">
+            </div>
+
+         </div>
+            
+            
+        <div class="slider-btns">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!--social-->
+
+              
+            <div class="img-social-bar">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+    
+
+        <div class="product-text">
+            <span class="product-category" >women denim</span>
+            <!--title-->
+            <h3> Women Spring Business Solid Lapel Neck Single Button Blazer</h3>
+            <!--price-->
+            <span class="product-price">$22.14</span>
+            <!--DETAILS-->
+            <p>Color:	Orange<br>
+                Style:	Elegant<br>
+                Details:	Button<br>
+                Pattern Type:	Plain<br>
+                Type:	Regular<br>
+                Sleeve Length:	Long Sleeve<br>
+                Length:	Regular<br>
+                Temperature:	Spring/Fall (18-25℃/63-77℉)<br>
+                Pockets:	Fake Pockets<br>
+                Body:	Unlined<br>
+                Neckline:	Lapel<br>
+                Sleeve Type:	Regular Sleeve<><br>
+                Placket:	Single Breasted<br>
+                Fit Type:	Regular Fit<br>
+                Fabric:	Slight Stretch<br>
+                Material:	Woven Fabric</p>
+                <!--size-container-->
+                <div class="product-size-container">
+                    <strong>select size:-</strong>
+                    <!--size-->
+                    <div class="product-size">
+                        <!--xl-->
+                        <input type="checkbox" class="s-checkbox" id="s-xl">
+                        <label for="s-xl" class="s-label">XL</label>
+                        <!--small-->
+                        <input type="checkbox" class="s-checkbox" id="s-s">
+                        <label for="s-s" class="s-label" >S</label>
+                        <!--medium-->
+                        <input type="checkbox" class="s-checkbox" id="s-m">
+                        <label for="s-m" class="s-label">M</label>
+                        <!--xl-->
+                        <input type="checkbox" class="s-checkbox" id="s-l">
+                        <label for="s-l" class="s-label">L</label>
+                    </div>
+                </div>
+                <!--buttons-->
+                <div class="product-buttons">
+                    <a href="#" class="add-bag-btn">add to bag</a>
+                    <a href="#" class="add-wishlist-btn">add to wishlist</a>
+                </div>
+                <!--help-btn-->
+                <a href="#" class="help-btn">need any help?</a>
+        </div>
+    
+    </div>
+
+  </section>
+
+
+  <!--==jquery===================-->
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script type="text/javascript">
+    $('.s-checkbox').on('change', function(){
+        $('.s-checkbox').not(this).prop('checked',false);
+    });
+    //swipercript
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+      },
+    });
+  </script>
+
+</body>
+</html>
